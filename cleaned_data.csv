@@ -1,0 +1,51 @@
+name,industry,revenue,country,profit,employees,net_profit,revenue_per_employee,company_size
+Amazon,Retail Information technology,716000000000.0,United States,79900000000.0,1576000,11.16,454314.72,large
+Walmart,Retail,713000000000.0,United States,21800000000.0,2100000,3.06,339523.81,large
+State Grid Corporation of China,Electricity,545000000000.0,China,9200000000.0,1361423,1.69,400316.43,large
+Saudi Aramco,Oil and gas,480000000000.0,Saudi Arabia,106000000000.0,73311,22.08,6547448.54,small 
+China National Petroleum Corporation,Oil and gas,476000000000.0,China,25200000000.0,1026301,5.29,463801.56,large
+China Petrochemical Corporation,Oil and gas,429000000000.0,China,9300000000.0,513434,2.17,835550.43,large
+Apple,Information technology,416000000000.0,United States,112000000000.0,166000,26.92,2506024.1,medium
+Alphabet,Information technology,402000000000.0,United States,132000000000.0,190820,32.84,2106697.41,medium
+UnitedHealth Group,Healthcare,400000000000.0,United States,14400000000.0,400000,3.6,1000000.0,large
+Berkshire Hathaway,Financials,371000000000.0,United States,88900000000.0,392400,23.96,945463.81,large
+CVS Health,Healthcare,357000000000.0,United States,8300000000.000001,259500,2.32,1375722.54,medium
+Volkswagen Group,Automotive,348000000000.0,Germany,17900000000.0,684025,5.14,508753.34,large
+ExxonMobil,Oil and gas,344000000000.0,United States,36000000000.0,61500,10.47,5593495.93,small 
+Vitol,Commodities,331000000000.0,Switzerland,13000000000.0,1560,3.93,212179487.18,small 
+Shell,Oil and gas,323000000000.0,United Kingdom,19300000000.0,103000,5.98,3135922.33,medium
+China State Construction Engineering,Construction,320000000000.0,China,4200000000.0,382894,1.31,835740.44,large
+Toyota,Automotive,312000000000.0,Japan,34200000000.000004,380793,10.96,819342.79,large
+McKesson,Healthcare,308000000000.0,United States,3000000000.0,48000,0.97,6416666.67,small 
+Microsoft,Information technology,281000000000.0,United States,101000000000.0,228000,35.94,1232456.14,medium
+Cencora,Healthcare,262000000000.0,United States,1700000000.0,44000,0.65,5954545.45,small 
+Trafigura,Commodities,244000000000.0,Singapore,7300000000.0,12479,2.99,19552848.79,small 
+Costco,Retail,242000000000.0,United States,6200000000.0,316000,2.56,765822.78,medium
+JPMorgan Chase,Financials,239000000000.0,United States,49500000000.0,309926,20.71,771151.82,medium
+Industrial and Commercial Bank of China,Financials,222000000000.0,China,51400000000.0,419252,23.15,529514.47,large
+Schwarz Gruppe,Retail,220000000000.0,Germany,260000000.0,604000,0.12,364238.41,large
+TotalEnergies,Oil and gas,218000000000.0,France,21300000000.0,102579,9.77,2125191.32,medium
+Glencore,Commodities,217000000000.0,Switzerland,4200000000.0,83426,1.94,2601107.57,small 
+Nvidia,Semiconductors,215000000000.0,United States,120000000000.0,36000,55.81,5972222.22,small 
+BP,Oil and gas,213000000000.0,United Kingdom,15200000000.0,79400,7.14,2682619.65,small 
+Cardinal Health,Healthcare,205000000000.0,United States,260000000.0,47520,0.13,4313973.06,small 
+Stellantis,Automotive,204000000000.0,Netherlands,20100000000.0,258275,9.85,789855.77,medium
+Chevron,Oil and gas,200000000000.0,United States,21300000000.0,45600,10.65,4385964.91,small 
+China Construction Bank,Financials,199000000000.0,China,46900000000.0,376871,23.57,528032.14,large
+Samsung Electronics,Electronics,198000000000.0,South Korea,11000000000.0,267860,5.56,739192.12,medium
+Foxconn,Electronics,197000000000.0,Taiwan,4500000000.0,621393,2.28,317029.64,large
+Cigna,Healthcare,195000000000.0,United States,5100000000.0,71413,2.62,2730595.27,small 
+Agricultural Bank of China,Financials,192000000000.0,China,38000000000.0,451003,19.79,425717.79,large
+China Railway Engineering Corporation,Construction,178000000000.0,China,2100000000.0,314149,1.18,566610.11,medium
+Cargill,Conglomerate,177000000000.0,United States,17600000000.0,160000,9.94,1106250.0,medium
+Ford Motor Company,Automotive,176000000000.0,United States,4300000000.0,177000,2.44,994350.28,medium
+Bank of China,Financials,172000000000.0,China,32700000000.000004,306931,19.01,560386.54,medium
+Bank of America,Financials,171000000000.0,United States,26500000000.0,212985,15.5,802873.44,medium
+General Motors,Automotive,171000000000.0,United States,10100000000.0,163000,5.91,1049079.75,medium
+Elevance Health,Healthcare,171000000000.0,United States,5900000000.0,104900,3.45,1630123.93,medium
+BMW Group,Automotive,168000000000.0,Germany,12200000000.0,154950,7.26,1084220.72,medium
+Mercedes-Benz Group,Automotive,165000000000.0,Germany,15400000000.0,166056,9.33,993640.7,medium
+Meta Platforms,Social media,164000000000.0,United States,62300000000.0,78450,37.99,2090503.51,small 
+China Railway Construction Corporation,Construction,160000000000.0,China,1700000000.0,336433,1.06,475577.6,large
+Baowu,Steel,157000000000.0,China,2400000000.0,258697,1.53,606887.59,medium
+Citigroup,Financials,156000000000.0,United States,9200000000.0,237925,5.9,655668.8,medium
