@@ -87,14 +87,13 @@ def average_revenue_profit_by_industry(df):
                     legend=dict(x=0.5,y=0.995,orientation='v'),
                     xaxis_title='Industry',
                     yaxis_title='Amount')
-
+    
     fig.update_traces(texttemplate='$%{y:.4~s}B',textposition='outside')
     fig.update_xaxes(title='industry',tickangle=45,showgrid=True)
     fig.write_html('outputs/average_revenue_profit_by_industry.html')
 
     st.plotly_chart(fig)
     print(type(fig))
-
 #########################################################################
 def relationship_between_revenue_and_profit(df):
     fig=px.scatter(df,x='revenue',y='profit',color='industry',trendline='ols')
@@ -107,14 +106,22 @@ def relationship_between_revenue_and_profit(df):
                      showgrid=True)
 
     fig.update_yaxes(title=dict(text='profit',font=dict(size=20)),
-                     type='log',
+                     
                      showgrid=True)
+
+    fig.update_layout(margin=dict(t=100),annotations=[dict(text='يوضح هذا الرسم أن هناك علاقة طردية بين الإيرادات والأرباح،<br>'
+                 'حيث أن الشركات التي تحقق أرباحاً أكثر تميل إلى الأعلى.<br>'
+                 'ويوضح هذا الرسم أن أعلى المجالات أرباحاً هما information technology & finance،<br>'
+                 'ومجال retail هو الأعلى من حيث الإيرادات ولكن نسبة الأرباح به قليلة بالنسبة للإيرادات.<br>'
+                 'وقد تكون هناك عوامل أخرى تؤثر على الأرباح مثل التكاليف والاستثمارات.',
+                                        x=0.15,y=1,yref='paper',xref='paper',
+                                        font=dict(size=20,family='bold',color='purple'))])
     st.plotly_chart(fig)
     fig.write_html('outputs/Relationship Revenue vs Profit by Industry.html')
 #########################################################################
 def relationship_between_employees_and_revenue(df):
     fig=px.scatter(df,x='employees',y='revenue',color='industry',
-                hover_name='name',size='employees',size_max=30,
+                hover_name='name',hover_data='industry',size='employees',size_max=30,
                 trendline='ols',trendline_scope='overall')
 
     fig.update_xaxes(type='log',title_text='employees count',showgrid=True)
@@ -123,6 +130,10 @@ def relationship_between_employees_and_revenue(df):
     fig.update_layout(title=dict(text='relationship between employees and revenue',x=0.5,
                             font=dict(size=50,family='bold')))
 
+    fig.update_layout(margin=dict(t=60,r=35),annotations=[dict(text='يوضح هذا الرسم أن هناك علاقة طردية بين عدد الموظفين والإيرادات،<br>'
+                    'حيث أن الشركات التي لديها عدد أكبر من الموظفين تمثل علي نسبه من الايرادات',
+                    x=-0.05,y=1.07,yref='paper',xref='paper',showarrow=False,
+                    font=dict(size=20,family='bold',color='purple'))])
     st.plotly_chart(fig)
     fig.write_html('outputs/relationship_between_employees_and_revenue.html')
 #########################################################################
@@ -130,14 +141,20 @@ def comparison_profit_margin_and_revenu_per_employee(df):
 
     fig=px.scatter(df,x='revenue_per_employee',y='net_profit',
                 color='industry',hover_name='name',
-                hover_data=['revenue','profit','country'],
-                size='revenue_per_employee',size_max=100)
+                hover_data=['revenue','profit','country'],size='net_profit',size_max=40)
 
     fig.update_xaxes(type='log',title_text='Revenue Per Employee',showgrid=True)
-    fig.update_yaxes(title_text='Profit Margin',showgrid=True)
+    fig.update_yaxes(title_text='Profit Margin %',showgrid=True)
 
-    fig.update_layout(title=dict(text='comparison profit margin and revenue per employee',x=0.5,
+    fig.update_layout(title=dict(text='Profit Margin vs Revenue Per Employee by Industry',x=0.5,
                             font=dict(size=50,family='bold')))
+
+    fig.update_layout(margin=dict(t=150,r=35),
+                    annotations=[dict(text='توضح هذه المقارنه ان اغلب الشركات تتركز عند العائد لكل موظف اقل من مليون و تحقق هامش ربح بنسبه %20 <br>'
+                    'ويوضح الرسم ان هناك بعض الشركات تحقق عائد  لكل موظف اكبر من 100 مليون و تحقق هامش ربح اقل من %20 <br>' 
+                    'و يوجد بعض الشركات التي تحقق قيمه ربح بين 40% / 60% و تحقق عائد لكل موظف اقل من مليون<br>' ,
+                    x=0.6,y=1.09,yref='paper',xref='paper',showarrow=False,
+                    font=dict(size=20,family='bold',color='purple'))])
     st.plotly_chart(fig)
     fig.write_html('outputs/comparison_profit_margin_and_revenu_per_employee.html')
 #########################################################################
@@ -182,9 +199,9 @@ def additional_business_analysis(df):
 
 
 
+comparison_profit_margin_and_revenu_per_employee(df)
 
-
-
+relationship_between_employees_and_revenue(df)
 
 
 
