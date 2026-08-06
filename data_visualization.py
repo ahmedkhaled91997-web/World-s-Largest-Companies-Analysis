@@ -175,15 +175,6 @@ def outliers_analysis(df):
     fig1.update_xaxes(title_text='Industry',showgrid=True)
     fig1.write_html('outputs/box_plot_net_profit_by_industry.html')
     st.plotly_chart(fig1)
-
-    # Q1=df['revenue_per_employee'].quantile(0.25)
-    # Q3=df['revenue_per_employee'].quantile(0.75)
-    # IQR=Q3-Q1
-    # lower=Q1-1.5*IQR
-    # upper=Q3+1.5*IQR
-    # outliers2=df[(df['revenue_per_employee']<lower) | (df['revenue_per_employee']>upper)]
-    # cleaned_data2=df[(df['revenue_per_employee']>lower) & (df['revenue_per_employee']<upper)]
-    # fig2=px.violin(outliers2,x='revenue_per_employee',
 ##################################################################3######
 def additional_business_analysis(df):
 # country with highest revenue
@@ -198,10 +189,6 @@ def additional_business_analysis(df):
 
 
 
-
-comparison_profit_margin_and_revenu_per_employee(df)
-
-relationship_between_employees_and_revenue(df)
 
 
 
